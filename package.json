@@ -1,5 +1,6 @@
 {
   "private": true,
+  "description": "test",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
