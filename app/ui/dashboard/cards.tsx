@@ -20,10 +20,10 @@ export default async function CardWrapper() {
     numberOfCustomers,
     totalPaidInvoices,
     totalPendingInvoices,
-  } = await fetchCardData();
+  } = (await fetchCardData()) ?? {};
   return (
     <>
-      {/* NOTE: Uncomment this code in Chapter 9 */}
+      {/* NOTE: Uncomment this code when ready */}
 
       <Card title="Collected" value={totalPaidInvoices} type="collected" />
       <Card title="Pending" value={totalPendingInvoices} type="pending" />
